@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Master- Online code Editor</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="shortcut icon" href="/Users/anshg/OneDrive/Documents/New folder/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="head">
+     <img src="blocks.png">
+     <h1>Code Master</h1>
+    </div>
+    <div class="editor">
+        <div class="row">
+            <div class="html-code">
+                <div class="logo">
+                    <img src="html.png"  style="width: 30px; height: 30px; margin-left: 15px; background-color: rgba(20, 19, 19);">
+                    <nav class="nav">HTML</nav>
+                </div>   
+                <textarea id="html-code" ></textarea>
+            </div>
+            <div class="css-code">
+                <div class="logo">
+                    <img src="css.png"  style="width: 50px; height: 30px; margin-left: 15px; background-color: rgba(20, 19, 19);">
+                    <nav class="nav">CSS</nav>
+                </div>
+                <textarea id="css-code"></textarea>
+            </div>
+            <div class="code">
+                <div class="logo">
+                    <img src="JavaScript.png"  style="width: 50px; height: 30px; margin-left: 15px; background-color: rgba(20, 19, 19);">
+                    <nav class="nav" >JAVASCRIPT</nav>
+                </div>      
+                <textarea id="js-code"></textarea>
+            </div>
+        </div>
+        <iframe  id="output"></iframe>
+    </div>
+    <script type="text/javascript">
+    function run(){
+        let htmlCode=document.querySelector(".editor #html-code").value;
+        let cssCode="<style>"+document.querySelector(".editor #css-code").value+"</style>";
+        let jsCode=document.querySelector(".editor #js-code").value;
+        let output=document.querySelector(".editor #output");
+        console.log(htmlCode,cssCode,jsCode,output);
+        output.contentDocument.body.innerHTML=htmlCode+cssCode;
+        output.contentWindow.eval(jsCode);
+    }
+    document.querySelector(".editor #html-code").addEventListener("keyup",run);
+    document.querySelector(".editor #css-code").addEventListener("keyup",run);
+    document.querySelector(".editor #js-code").addEventListener("keyup",run);
+
+    </script>
+</body>
+</html>

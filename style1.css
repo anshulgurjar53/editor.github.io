@@ -1,0 +1,178 @@
+body{
+    background-color: rgb(41,39,39);
+}
+.index{
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+#master {
+    overflow: hidden;
+    animation: 
+      typing 2s steps(20),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    20% { border-color: orange; }
+  }
+.heading{
+    display: flex;
+    flex-direction: row;
+
+}
+#master{color: red;}
+#master1{color: red;}
+
+h2{
+    color: white;
+    font-size:  80px; 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+h4{
+    color: rgba(177, 165, 165, 0.486);
+    font-size:  20px; 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    line-height: 0px;
+    margin-bottom: 1px;
+}
+p{
+    color: white;
+    font-size:  40px; 
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 0px;  
+}
+.p6{
+    line-height: 0px;
+    margin-bottom: 50px;
+}
+.main{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+    
+}
+.hello{
+    text-align: center;
+    color: white;
+    font-size: 30px;   
+    align-content: center;
+    display: flex;
+    justify-content: center;   
+}
+.button{
+    margin: 10px;
+    margin-bottom: 50px;
+    padding: 8px;
+    color: white;
+    border-radius: 7px;
+    background-color: rgba(53, 146, 53, 0.774);
+    animation: name 2s infinite;
+}
+@keyframes name{
+    from{background-color: rgba(53, 146, 53, 0.774);}
+    to{background-color: red;}
+    
+}
+.button:hover{
+    margin: 10px;
+    margin-bottom: 50px;
+    padding: 8px;
+    border-radius: 7px;
+    background-color: rgba(230, 70, 7, 0.712);
+    cursor: pointer;
+    color: black;
+    
+    
+}
+.des{
+    background-color: rgb(41,39,39);
+    display: flex;
+    flex-direction: row;
+}
+#web,#web1{
+    width: 500px;
+    margin: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.image{
+    margin-top: 150px;
+}
+.text h3{
+    text-align: left;
+    font-size: 50px;
+    line-height: 0px;
+    color: white;
+    
+    align-content: center;
+}
+.text{
+    margin-top: 50px;
+    margin-left: 40px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#imge{
+    height: 200px;
+    width: 150px;
+}
+
+.text p{
+    text-align: left;
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+    margin-top: 40px;
+    align-content: center;
+
+}
+#button{
+    justify-content: flex-start;
+    text-decoration: black;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding: 8px;
+    border-radius: 7px;
+    background-color: rgba(129, 121, 122, 0.774);
+
+}
+.hello1{
+    text-align: left;
+    color: black;
+    font-size: 30px;   
+    align-content: left;
+    display: flex;
+    justify-content: start;
+
+}
+
+
+
