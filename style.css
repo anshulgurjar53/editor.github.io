@@ -4,6 +4,9 @@ body{
     
     
 }
+#master{
+    color:red;
+}
 .head{
     align-items: center;
     height: 10px;
@@ -21,7 +24,7 @@ img{
     align-content: center;
     align-self: center;
     
-    background-color: grey;
+    
     
     
 }
