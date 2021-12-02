@@ -2,7 +2,7 @@ body{
     background-color: rgb(41,39,39);
 }
 .index{
-    background-image: url("background.jpg");
+    background-image: url("/editor.github.io/background.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
