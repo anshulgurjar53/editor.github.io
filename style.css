@@ -6,6 +6,7 @@ body{
 }
 #master{
     color:red;
+    background-color:red;
 }
 .head{
     align-items: center;
@@ -23,6 +24,7 @@ img{
     height: 50px;
     align-content: center;
     align-self: center;
+    background-color: rgb(8,8,8);
     
     
     
